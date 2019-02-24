@@ -1,13 +1,8 @@
-/* eslint-disable func-names */
-import { ADD_ARTICLE } from '../constants/action-types';
-
-export function addArticle(payload) {
-  return { type: ADD_ARTICLE, payload };
-}
-export function getData() {
-  return function (dispatch) {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json())
-      .then(json => dispatch({ type: 'DATA_LOADED', payload: json }));
+/* eslint-disable import/prefer-default-export */
+export function selectUser(user) {
+  console.log(`You clicked on user: ${user.first}`);
+  return {
+    type: 'USER_SELECTED',
+    payload: user,
   };
 }

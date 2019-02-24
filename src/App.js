@@ -1,21 +1,11 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import List from './components/List';
-import Form from './components/Form';
-import Post from './components/Post';
+
 class App extends Component {
   render() {
     return (
-      <div className="row mt-5">
-        <div className="col-md-4 offset-md-1">
-          <h2>Articles</h2>
-          <List />
-        </div>
-        <div className="col-md-4 offset-md-1">
-          <h2>Add a new article</h2>
-          <Form />
-          <Post />
-        </div>
-      </div>
+      <div>Hello World</div>
     );
   }
 }
